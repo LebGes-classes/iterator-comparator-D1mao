@@ -102,8 +102,9 @@ public class MyHashMap<K, V> implements MyIterator<Node<K, V>, K>{
         if (!hasNext()) {
             throw new NoSuchElementException();
         }
+        Node<K, V> rNode = currentNode;
         currentNode = currentNode.next;
-        return currentNode;
+        return rNode;
     }
 
     public void remove(K key){

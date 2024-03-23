@@ -25,6 +25,8 @@ public class Main {
 
         System.out.println("Сравним Ключ и Ключище: " + comparator.compare(hashmap.getNode("Ключ"), hashmap.getNode("Ключище")));
 
-
+        while (hashmap.hasNext()){
+            System.out.println(hashmap.next().value);
+        }
     }
 }
